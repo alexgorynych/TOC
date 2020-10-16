@@ -1,0 +1,67 @@
+:root {
+--mainColor: #371E31;
+--firstColor: #FFBB0B;
+--secondColor: #33CC00;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/raleway/Raleway-Medium.ttf);
+}
+
+body {
+    max-width: 1920px;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    
+}
+
+h2 {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    font-style: normal;
+}
+
+.nav1, .nav2, .nav3, .nav4, .nav5, .nav6 {
+    background-color: var(--secondColor);
+    color: white;
+    border-radius: 32px;
+    margin: auto 0px;
+}
+.nav1 h2{
+    margin: 12px 23px 12px 24px; 
+}
+.nav2 h2{
+    margin: 12px 47px; 
+}
+.nav3 h2{
+    margin: 12px 47px 12px 48px;
+}
+.nav4 h2{ 
+    margin: 12px 40px;
+}
+.nav5 h2{
+    margin: 12px 36px 12px 37px;
+}
+.nav6 h2{
+    margin: 12px 47px 12px 48px;
+}
+
+
+.personalArea {
+    background-color: var(--secondColor);
+    color: white;
+    border-radius: 4px;
+    margin: auto 0px;
+}
+.personalArea h2{
+    margin: 12px 32px;
+}
