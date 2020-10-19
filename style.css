@@ -1,40 +1,68 @@
 :root {
---mainColor: #371E31;
---firstColor: #FFBB0B;
---secondColor: #33CC00;
+    --mainColor: #371E31;
+    --firstColor: #FFBB0B;
+    --secondColor: #33CC00;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/raleway/Raleway-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
     font-family: Raleway;
     src: url(/fonts/raleway/Raleway-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/raleway/Raleway-SemiBold.ttf);
+    font-weight: 600;   
 }
 
 body {
     max-width: 1920px;
+    margin: 0px auto;
+    font-weight: 400;
+    font-family: Raleway;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-nav {
+.nav_header {
+    margin-right: auto;
+    margin-left: 46px;
+}
+
+.nav_header nav {
     display: flex;
-    
 }
 
 h2 {
-    font-family: Raleway;
     font-size: 16px;
     font-weight: 600;
-    line-height: 19px;
-    font-style: normal;
 }
+
+h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
 
 .nav1, .nav2, .nav3, .nav4, .nav5, .nav6 {
     background-color: var(--secondColor);
     color: white;
     border-radius: 32px;
-    margin: auto 0px;
+    margin: auto 4px;
 }
 .nav1 h2{
     margin: 12px 23px 12px 24px; 
@@ -56,12 +84,58 @@ h2 {
 }
 
 
-.personalArea {
+.personal_area {
     background-color: var(--secondColor);
     color: white;
     border-radius: 4px;
     margin: auto 0px;
 }
-.personalArea h2{
+.personal_area h2{
     margin: 12px 32px;
+}
+
+footer {
+    background-color: var(--mainColor);
+    border-radius: 18px;
+    color: white;
+    margin: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+.nav_footer{
+    display: flex;
+}
+
+.nav_footer div:first-child{
+    margin-right: 80px;
+}
+
+.a_footer {
+    padding: 7px 0px;
+}
+
+.text_footer {
+    max-width: 310px;
+}
+
+.text_footer button{
+    padding: 12px 30px;
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 500;
+    background-color: var(--firstColor);
+    border-style: none;
+    border-radius: 3px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.con1 img, .con2 img, .con3 img {
+    height: 20px;
+    width: 20px;
 }
