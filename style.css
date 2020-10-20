@@ -94,6 +94,18 @@ h3{
     margin: 12px 32px;
 }
 
+/*=======================================================================*/
+
+main {
+    margin: 0px 70px;
+}
+
+.main_video video{
+    border-radius: 20px;
+}
+
+/*=======================================================================*/
+
 footer {
     background-color: var(--mainColor);
     border-radius: 18px;
@@ -135,7 +147,16 @@ footer {
     display: flex;
     flex-direction: column;
 }
-.con1 img, .con2 img, .con3 img {
-    height: 20px;
+
+.con_img {
     width: 20px;
+    height: 20px;
+    margin-right: 16px;
 }
+
+.con1, .con2, .con3 {
+    display: flex;
+    margin: 12px 0px;
+    align-content: center;
+}
+
