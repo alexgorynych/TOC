@@ -6,6 +6,12 @@
 
 @font-face {
     font-family: Raleway;
+    src: url(/fonts/raleway/Raleway-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Raleway;
     src: url(/fonts/raleway/Raleway-Regular.ttf);
     font-weight: 400;
 }
@@ -33,9 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 20px 4% 20px;
 }
 
 .nav_header {
@@ -57,6 +61,23 @@ h3{
     font-weight: 500;
 }
 
+h4 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 4% 8% 2.3%;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 2% 8% 6%;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 32px 0px 9px 40px;
+}
 
 .nav1, .nav2, .nav3, .nav4, .nav5, .nav6 {
     background-color: var(--secondColor);
@@ -97,20 +118,73 @@ h3{
 /*=======================================================================*/
 
 main {
-    margin: 0px 70px;
+    margin: 0px 4%;
+    display: flex;
+    grid-template-columns: 25% 40% 25%;
+    justify-content: space-between;
+}
+
+.first_block {
+    width: 25%;
+}
+
+.main_video {
+    /*width: 25%;*/
 }
 
 .main_video video{
     border-radius: 20px;
 }
 
+.main_audio audio{
+    width: 100%;
+}
+
+.main_text {
+    width: 40%;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: end;
+    color: white;
+    height: fit-content;
+}
+
+.main_text input {
+    margin: 0px 8% 3.5%;
+    
+    width: 83%;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.text_master p{
+    margin: 0px 10% 5%;
+}
+
+.main_master {
+    width: 25%;
+    background-color: var(--mainColor);
+    border-radius: 12px;
+}
+
+.text_master {
+    color: white;
+    margin: 0px;
+}
+
+.main_master img {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
 /*=======================================================================*/
 
 footer {
     background-color: var(--mainColor);
     border-radius: 18px;
     color: white;
-    margin: 0px 70px;
+    margin: 0px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
