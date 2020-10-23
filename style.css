@@ -155,6 +155,25 @@ main {
     border: none;
 }
 
+.main-text-button {
+    position: relative;
+    top: -30%;
+    left: -9%;
+    background-color: var(--firstColor);
+    width: 160px;
+    height: 23%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    filter: drop-shadow(0px 6px 12px rgba(232, 221, 210, 0.2));
+    border: none;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 3%;
+    color: var(--mainColor);
+}
+
+
+
 .second_row {
     display: flex;
     justify-content: space-between;
@@ -248,7 +267,7 @@ main {
 }
 
 .maga_text p {
-    margin: 4% 4.5%;
+    margin: 3% 4.5%;
 }
 
 .second_block {
