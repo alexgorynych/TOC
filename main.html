@@ -6,37 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/img/logo.png">
+
+        <div class="desktop_header">
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+            <div class="nav_header">
+                <nav>
+                    <a class="nav1">
+                        <h1>О компании</h1>
+                    </a>
+                    <a class="nav2">
+                        <h1>Видео</h1>
+                    </a>
+                    <a class="nav3">
+                        <h1>Аудио</h1>
+                    </a>
+                    <a class="nav4">
+                        <h1>Журнал</h1>
+                    </a>
+                    <a class="nav5">
+                        <h1>Тренеры</h1>
+                    </a>
+                    <a class="nav6">
+                        <h1>Книги</h1>
+                    </a>
+                </nav>
+            </div>
+            <div class="personal_area">
+                <h1>Личный кабинет</h1>
+            </div>
         </div>
-        <div class="nav_header">
-            <nav>
-                <a class="nav1">
-                    <h1>О компании</h1>
-                </a>
-                <a class="nav2">
-                    <h1>Видео</h1>
-                </a>
-                <a class="nav3">
-                    <h1>Аудио</h1>
-                </a>
-                <a class="nav4">
-                    <h1>Журнал</h1>
-                </a>
-                <a class="nav5">
-                    <h1>Тренеры</h1>
-                </a>
-                <a class="nav6">
-                    <h1>Книги</h1>
-                </a>
-            </nav>
-        </div>
-        <div class="personal_area">
-            <h1>Личный кабинет</h1>
+        <div class="mobile_header">
+
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+
+            <div class="menu">
+                <button class="menu_button" onclick="OpenMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="menu_container">
+                    <button class="cross">
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <ul>
+                        <li>
+                            <div>Личный кабинет</div>
+                        </li>
+                        <li>Главная</li>
+                        <li>О компании</li>
+                        <li>Видео</li>
+                        <li>Аудио</li>
+                        <li>Журнал</li>
+                        <li>Тренеры</li>
+                        <li>Книги</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -103,78 +140,71 @@
                     </div>
                     <div class="main_magazine">
                         <button><img src="/img/up_arrow.png"></button>
-                        <div class="maga_content">
-                            <div class="maga_first">
-                                <h2>Телепатия тела</h2>
-                                <div class="maga_text">
-                                    <p>
-                                        Это увлекательно — чувствовать тело. Понимать, чего оно хочет и когда.
-                                        В моей жизни настала эпоха интуитивного питания, благодаря жировой
-                                        прослойке, которой тело обросло по причине полного хаоса ежедневного
-                                        ритма...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="maga_first">
-                                <h2>Что значит заниматься саморазвитием?</h2>
-                                <div class="maga_text">
-                                    <p>
-                                        На протяжении многих лет живет общество успешных людей без экономического
-                                        образования и дипломов. Они творят реальность, которая окружает
-                                        нас с вами сейчас...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="maga_first">
-                                <h2>Что значит заниматься саморазвитием?</h2>
-                                <div class="maga_text">
-                                    <p>
-                                        На протяжении многих лет живет общество успешных людей без экономического
-                                        образования и дипломов. Они творят реальность, которая окружает
-                                        нас с вами сейчас...
-                                    </p>
-                                </div>
+
+                        <div class="maga_first">
+                            <h2>Телепатия тела</h2>
+                            <div class="maga_text">
+                                <p>
+                                    Это увлекательно — чувствовать тело. Понимать, чего оно хочет и когда. В моей жизни настала эпоха интуитивного питания, благодаря жировой прослойке, которой тело обросло по причине полного хаоса ежедневного ритма...
+                                </p>
                             </div>
                         </div>
+                        <div class="maga_first">
+                            <h2>Что значит заниматься саморазвитием?</h2>
+                            <div class="maga_text">
+                                <p>
+                                    На протяжении многих лет живет общество успешных людей без экономического образования и дипломов. Они творят реальность, которая окружает нас с вами сейчас...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="maga_first">
+                            <h2>Что значит заниматься саморазвитием?</h2>
+                            <div class="maga_text">
+                                <p>
+                                    На протяжении многих лет живет общество успешных людей без экономического образования и дипломов. Они творят реальность, которая окружает нас с вами сейчас...
+                                </p>
+                            </div>
+                        </div>
+
                         <button><img src="/img/down_arrow.png"></button>
                     </div>
                 </div>
-
+                <div class="partners">
+                    <img class="partners_img_1" src="/img/1.png">
+                    <img class="partners_img_2" src="/img/2.png">
+                    <img class="partners_img_3" src="/img/3.png">
+                    <img class="partners_img_4" src="/img/4.png">
+                </div>
             </div>
 
             <div class="second_block">
-                <div class="main_master">
-                    <img src="/img/mainphoto.jpg">
-                    <div class="text_master">
-                        <h2>Дарья Анэст</h2>
-                        <p>
-                            Life-коучинг, Холистический коучинг, НЛП<br>Опыт свыше 1000
-                            <br>Формат сессий: Off-line/On-line<br>Продолжительность 40 мин >>> 1 ч 20 мин
-                            <br>Стоимость от 3000₽<br>г. Санкт-Петербург<br>тел.: 8 (921) 753 71 30<br>e-mail:
-                            dtrushnaya@gmail.com
-                            <br>web-site: www.topofcoaching.com
-                        </p>
+                <div class="master_container">
+                    <div class="main_master">
+                        <img src="/img/mainphoto.jpg">
+                        <div class="text_master">
+                            <h2>Дарья Анэст</h2>
+                            <p>
+                                Life-коучинг, Холистический коучинг, НЛП<br>Опыт свыше 1000
+                                <br>Формат сессий: Off-line/On-line<br>Продолжительность 40 мин >>> 1 ч 20 мин
+                                <br>Стоимость от 3000₽<br>г. Санкт-Петербург<br>тел.: 8 (921) 753 71 30<br>e-mail: dtrushnaya@gmail.com
+                                <br>web-site: www.topofcoaching.com
+                            </p>
+                        </div>
                     </div>
-
+                    <button class="master_button">ЗАКАЗАТЬ СЕССИЮ</button>
                 </div>
-                <div><button class="master_button">ЗАКАЗАТЬ СЕССИЮ</button></div>
-
             </div>
 
         </div>
-        </div>
-        <div class="partners">
-            <img class="partners_img_1" src="/img/1.png">
-            <img class="partners_img_2" src="/img/2.png">
-            <img class="partners_img_3" src="/img/3.png">
-            <img class="partners_img_4" src="/img/4.png">
-        </div>
+
+
     </main>
 
     <footer>
 
         <nav class="nav_footer">
-            <div><a>
+            <div class="nav_container">
+                <a>
                     <h3 class="a_footer">О компании</h3>
                 </a>
                 <a>
@@ -184,7 +214,7 @@
                     <h3 class="a_footer">Аудио</h3>
                 </a>
             </div>
-            <div>
+            <div class="nav_container">
                 <a>
                     <h3 class="a_footer">Журнал</h3>
                 </a>
@@ -195,19 +225,23 @@
                     <h3 class="a_footer">Книги</h3>
                 </a>
             </div>
-
         </nav>
 
         <div class="text_footer">
             <p>Являетесь мастером в сфере коучинга, психотерапии и желаете стать частью ассоциации?</p>
             <button>Стать тренером</button>
         </div>
+
         <div class="contacts">
-            <div class="con1"><img class="con_img" src="/img/telephone.png"><label>8(921)753-71-30</label></div>
-            <div class="con2"><img class="con_img" src="/img/email.png"><label>support@toc.com</label></div>
-            <div class="con3"><img class="con_img" src="/img/instagram.png"><label>@topofcoaching</label></div>
+            <div><img class="con_img" src="/img/telephone.png"><label>8(921)753-71-30</label></div>
+            <div><img class="con_img" src="/img/email.png"><label>support@toc.com</label></div>
+            <div><img class="con_img" src="/img/instagram.png"><label>@topofcoaching</label></div>
         </div>
+
     </footer>
+    <script src="/scriptMenu.js">
+    </script>
 </body>
+
 
 </html>
