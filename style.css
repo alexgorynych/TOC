@@ -171,24 +171,17 @@ h1 {
     background-color: var(--mainColor);
 }
 
+.menu_container.active {
+    right: 0px;
+}
+
 @media screen and (max-width: 1610px) {
     h1 {
         font-size: 14px;
     }
 }
-
-@media screen and (max-width: 1220px) {
-    .desktop_header {
-        display: none;
-    }
-    .mobile_header {
-        display: block;
-    }
-    .logo img {
-        width: 40px;
-    }
-    .mobile_header {
-        display: flex;
+.mobile_header {
+        
         justify-content: space-between;
         align-items: center;
         margin: 0 4%;
@@ -204,6 +197,17 @@ h1 {
         background: none;
         cursor: pointer;
     }
+@media screen and (max-width: 1220px) {
+    .desktop_header {
+        display: none;
+    }
+    .mobile_header {
+        display: flex;
+    }
+    .logo img {
+        width: 40px;
+    }
+    
 }
 
 

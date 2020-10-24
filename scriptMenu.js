@@ -1,4 +1,4 @@
-function OpenMenu() {
-
-    console.log(document.querySelector('menu_button').classList);
+function MenuActive() 
+{
+    document.getElementsByClassName('menu_container')[0].classList.toggle('active');
 }
