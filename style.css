@@ -180,23 +180,25 @@ h1 {
         font-size: 14px;
     }
 }
+
 .mobile_header {
-        
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 4%;
-    }
-    .menu_button {
-        width: 20px;
-        height: 20px;
-        padding: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background: none;
-        cursor: pointer;
-    }
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4%;
+}
+
+.menu_button {
+    width: 20px;
+    height: 20px;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1220px) {
     .desktop_header {
         display: none;
@@ -207,7 +209,6 @@ h1 {
     .logo img {
         width: 40px;
     }
-    
 }
 
 
@@ -360,6 +361,29 @@ main {
 .main_books .book img {
     width: 100%;
     border-radius: 8px;
+}
+
+.swiper-container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
 }
 
 .main_magazine {
