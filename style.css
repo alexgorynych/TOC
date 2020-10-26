@@ -308,7 +308,12 @@ main {
 }
 
 .main_audio {
-    text-align: center;
+    
+}
+
+.swiper-audio {
+    overflow: hidden;
+   max-height: 500px;
 }
 
 .main_audio button {
@@ -336,42 +341,16 @@ main {
     margin: 1% 0px 1.7% 20%;
 }
 
-.main_books {
+.swiper-books {
     display: flex;
-    justify-content: space-between;
-    margin-top: 4%;
-    align-items: center;
+    justify-content: center;
+    
 }
 
-.main_books button {
-    width: 45px;
-    height: 38px;
-    background: none;
-    border: none;
+.books-swiper-container {
+    width: 80%;
+    overflow: hidden;
 }
-
-.main_books button img {
-    width: 100%;
-}
-
-.main_books .book {
-    width: 23%;
-}
-
-.main_books .book img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.swiper-container {
-    width: 75%;
-    display: flex;
-    align-items: center;
-}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
 
 .swiper-slide img {
     width: 100%;
@@ -381,9 +360,10 @@ main {
     display: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    position: static;
+.swiper-books {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .main_magazine {
@@ -431,10 +411,12 @@ main {
     text-align: center;
 }
 
-.master_container {
+.master-swiper {
     position: sticky;
     top: 20px;
+    overflow: hidden;
 }
+
 
 .main_master {
     background-color: var(--mainColor);
