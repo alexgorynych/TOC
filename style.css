@@ -76,6 +76,7 @@ h1 {
     color: white;
     border-radius: 32px;
     margin: auto 4px;
+    text-decoration: none;
 }
 
 .nav1 h1 {
@@ -164,6 +165,11 @@ h1 {
     padding: 20px 70px;
 }
 
+.menu_container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 .menu_button div {
     width: 16px;
     height: 2px;
@@ -199,7 +205,7 @@ h1 {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1230px) {
     .desktop_header {
         display: none;
     }
@@ -268,7 +274,7 @@ main {
 
 .main_text input {
     width: 84.8%;
-    height: 20%;
+    height: 40px;
     border-radius: 6px;
     margin: 0 7.6%;
     padding: 0px;
@@ -277,9 +283,8 @@ main {
 
 .main-text-button {
     position: relative;
-    margin: -45px;
-    bottom: 15%;
-    left: 75%;
+    right: 50px;
+    top: -45px;
     background-color: var(--firstColor);
     width: 160px;
     height: 60px;
@@ -308,12 +313,8 @@ main {
 }
 
 .main_audio {
-    
-}
-
-.swiper-audio {
-    overflow: hidden;
-   max-height: 500px;
+    display: inline-block;
+    text-align: center;
 }
 
 .main_audio button {
@@ -344,7 +345,6 @@ main {
 .swiper-books {
     display: flex;
     justify-content: center;
-    
 }
 
 .books-swiper-container {
@@ -364,6 +364,12 @@ main {
     display: flex;
     align-items: center;
     margin-top: 30px;
+}
+
+.books-swiper-button-next img,
+.books-swiper-button-prev img {
+    height: 30px;
+    width: 30px;
 }
 
 .main_magazine {
@@ -414,9 +420,11 @@ main {
 .master-swiper {
     position: sticky;
     top: 20px;
-    overflow: hidden;
 }
 
+.master-swiper-container {
+    overflow: hidden;
+}
 
 .main_master {
     background-color: var(--mainColor);
@@ -483,7 +491,6 @@ main {
 }
 
 @media screen and (max-width: 1610px) {
-    .first_block {}
     .main_text h2 {
         font-size: 20px;
     }
@@ -507,7 +514,6 @@ main {
     .maga_text {
         font-size: 14px;
     }
-    .second_block {}
     .main_master h2 {
         font-size: 20px;
     }
@@ -519,7 +525,50 @@ main {
     }
 }
 
-@media screen and (max-width: 1220px) {}
+@media screen and (max-width: 1230px) {
+    .first_block {
+        width: 60%;
+    }
+    .second_block {
+        width: 38%;
+    }
+    .main_text {
+        width: 100%;
+        height: 150px;
+    }
+    .main_video {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .first_row {
+        flex-direction: column-reverse;
+    }
+    .second_row {
+        flex-direction: column-reverse;
+    }
+    .main_magazine {
+        width: 100%;
+    }
+    .content_column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .main_block {
+        flex-direction: column;
+    }
+    .first_block {
+        width: 100%;
+    }
+    .second_block {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main_text {
+        min-height: 200px;
+    }
+}
 
 
 /*=======================================================================*/
@@ -594,4 +643,28 @@ footer {
 
 .con_img {
     width: 22px;
+}
+
+@media screen and (max-width: 870px) {
+    footer {
+        flex-direction: column;
+    }
+    .nav_footer {
+        margin-top: 20px;
+        max-width: 300px;
+    }
+    .contacts {
+        margin-top: 30px;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .contacts div {
+        width: fit-content;
+    }
+    .text_footer {
+        align-items: center;
+        margin-top: 30px;
+        max-width: 300px;
+    }
 }

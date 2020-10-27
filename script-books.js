@@ -20,29 +20,6 @@ const mySwiper = new Swiper('.books-swiper-container', {
 
 })
 
-const audioSwiper = new Swiper('.audio-swiper-container', {
-
-    slidesPerView: 3,
-    
-    direction: 'vertical',
-
-    pagination: {
-        el: '.audio-swiper-pagination',
-    },
-
-
-
-    loop: true,
-    
-    navigation: {
-        nextEl: '.audio-swiper-button-next',
-        prevEl: '.audio-swiper-button-prev',
-    },
-
-})
-
-
-
 const masterSwiper = new Swiper('.master-swiper-container', {
     slidesPerView: 1,
     autoplay: {
